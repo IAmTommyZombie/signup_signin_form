@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css " />
+    <title>Sign In/Up Form</title>
+  </head>
+  <body>
+    <main>
+      <div class="box">
+        <!--This is the inner box where the forms and photos are-->
+
+        <div class="inner-box">
+          <!--This is the left side of the form-->
+          <div class="forms-wrap">
+            <form action="index.html" autocomplte="off" class="sign-in-form">
+              <!--The logo div-->
+              <div class="logo">
+                <img src="./img/logo (1).png" alt="logo" />
+                <h3>Shapes</h3>
+              </div>
+              <!--The heading div-->
+              <div class="heading">
+                <h2>Welcome Back</h2>
+                <h6>Not registered yet?</h6>
+                <a href="#" class="toggle">Sign Up</a>
+              </div>
+
+              <!--This is the username and password form-->
+              <div class="actual-form">
+                <!--This is the input section-->
+                <div class="input-wrap">
+                  <input
+                    type="text"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Name</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input
+                    type="password"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Password</label>
+                </div>
+                <input type="submit" value="Sign In" class="sign-btn" />
+                <p class="text">
+                  Forgotten your password or your login details?
+                  <a href="#">Get Help</a> signing in
+                </p>
+              </div>
+            </form>
+            <form action="index.html" autocomplte="off" class="sign-up-form">
+              <!--The logo div-->
+              <div class="logo">
+                <img src="./img/logo (1).png" alt="logo" />
+                <h3>Shapes</h3>
+              </div>
+              <!--The heading div-->
+              <div class="heading">
+                <h2>Get Started</h2>
+                <h6>Already have an account</h6>
+                <a href="#" class="toggle">Sign in</a>
+              </div>
+
+              <!--This is the username and password form-->
+              <div class="actual-form">
+                <!--This is the input section-->
+                <div class="input-wrap">
+                  <input
+                    type="email"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Email</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input
+                    type="text"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Name</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input
+                    type="password"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Password</label>
+                </div>
+                <input type="submit" value="Sign Up" class="sign-btn" />
+                <p class="text">
+                  By signing up, I agree to the
+                  <a href="#">Terms of Services</a>and privacy policy
+                </p>
+              </div>
+            </form>
+          </div>
+          <!--This is the right side of the form, the photo carousel-->
+          <div class="carousel">
+            <div class="images-wrapper">
+              <img
+                src="./img/image1.png"
+                class="image img-1 show"
+                alt="image 1"
+              />
+              <img src="./img/image2.png" class="image img-2" alt="image 2" />
+              <img src="./img/image3.png" class="image img-3" alt="image 3" />
+            </div>
+            <div class="text-slider">
+              <div class="text-wrap">
+                <div class="text-group">
+                  <h2>Look at these shapes</h2>
+                  <h2>Half circles, half triangles</h2>
+                  <h2>These folks love shapes!</h2>
+                </div>
+              </div>
+
+              <div class="bullets">
+                <span class="active" data-value="1"></span>
+                <span data-value="2"></span>
+                <span data-value="3"> </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
